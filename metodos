@@ -73,3 +73,56 @@ class SistemaRifasYApuestas:
         Args:
             id_rifa (int): El identificador de la rifa para la que se calculan los premios.
         """
+    def ver_informacion_rifa(self, id_rifa):
+        """
+        Muestra la información detallada de una rifa específica.
+
+        Args:
+            id_rifa (int): El identificador de la rifa cuya información se quiere ver.
+        """
+
+    def ver_historial_compras(self, id_usuario):
+        """
+        Muestra el historial de compras y apuestas de un usuario registrado.
+
+        Args:
+            id_usuario (int): El identificador del usuario registrado.
+        """
+
+    def buscar_rifas_disponibles(self, deporte, campeonato, fecha):
+        """
+        Busca rifas disponibles según criterios específicos, como deporte, campeonato y fecha.
+
+        Args:
+            deporte (str): El deporte de interés.
+            campeonato (str): El campeonato de interés.
+            fecha (str): La fecha en la que se desean buscar rifas.
+
+        Returns:
+            list: Una lista de rifas que cumplen con los criterios de búsqueda.
+        """
+
+    def ver_premios_rifa(self, id_rifa):
+        """
+        Muestra los premios disponibles en una rifa específica.
+
+        Args:
+            id_rifa (int): El identificador de la rifa cuyos premios se desean ver.
+        """
+
+    def generar_reporte_ventas(self, id_evento):
+        """
+        Genera un informe de ventas para un evento específico, incluyendo detalles de boletos vendidos y apuestas realizadas.
+
+        Args:
+            id_evento (int): El identificador del evento del cual se genera el informe de ventas.
+        """
+
+    def verificar_resultados_partido(self, id_partido, resultado_real):
+        """
+        Verifica los resultados reales de un partido y actualiza las apuestas en consecuencia.
+
+        Args:
+            id_partido (int): El identificador del partido cuyos resultados se verifican.
+            resultado_real (str): El resultado real del partido (por ejemplo, "Local", "Empate", "Visitante").
+        """
