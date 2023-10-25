@@ -1,0 +1,75 @@
+class SistemaRifasYApuestas:
+    def __init__(self):
+        """Inicializa el sistema de rifas y apuestas."""
+
+    def crear_rifa(self, nombre, max_participantes, valor_boleteria, fecha_inicio, fecha_fin, premio_principal, premios_secundarios):
+        """
+        Crea una nueva rifa con los detalles proporcionados.
+
+        Args:
+            nombre (str): El nombre de la rifa.
+            max_participantes (int): El número máximo de participantes.
+            valor_boleteria (float): El valor de la boletería.
+            fecha_inicio (str): La fecha de inicio de la rifa.
+            fecha_fin (str): La fecha de finalización de la rifa.
+            premio_principal (str): Descripción del premio principal.
+            premios_secundarios (list): Lista de descripciones de premios secundarios.
+        """
+
+    def editar_rifa(self, id_rifa, nombre, max_participantes, valor_boleteria, fecha_inicio, fecha_fin, premio_principal, premios_secundarios):
+        """
+        Edita una rifa existente con los nuevos detalles proporcionados.
+
+        Args:
+            id_rifa (int): El identificador de la rifa a editar.
+            nombre (str): El nuevo nombre de la rifa.
+            max_participantes (int): El nuevo número máximo de participantes.
+            valor_boleteria (float): El nuevo valor de la boletería.
+            fecha_inicio (str): La nueva fecha de inicio de la rifa.
+            fecha_fin (str): La nueva fecha de finalización de la rifa.
+            premio_principal (str): Nueva descripción del premio principal.
+            premios_secundarios (list): Nueva lista de descripciones de premios secundarios.
+        """
+
+    def eliminar_rifa(self, id_rifa):
+        """
+        Elimina una rifa existente según su identificador.
+
+        Args:
+            id_rifa (int): El identificador de la rifa a eliminar.
+        """
+
+    def realizar_apuesta(self, id_usuario, id_partido, monto, resultado):
+        """
+        Registra una apuesta de un usuario en un partido específico.
+
+        Args:
+            id_usuario (int): El identificador del usuario que realiza la apuesta.
+            id_partido (int): El identificador del partido en el que se realiza la apuesta.
+            monto (float): La cantidad de dinero apostada.
+            resultado (str): El resultado en el que se apuesta (por ejemplo, "Local", "Empate", "Visitante").
+        """
+
+    def cerrar_venta_boletos(self, id_evento):
+        """
+        Cierra la venta de boletos y apuestas para un evento específico.
+
+        Args:
+            id_evento (int): El identificador del evento que se va a cerrar.
+        """
+
+    def realizar_sorteo(self, id_rifa):
+        """
+        Realiza el sorteo de una rifa específica y determina a los ganadores.
+
+        Args:
+            id_rifa (int): El identificador de la rifa que se va a sortear.
+        """
+
+    def calcular_pago_premios(self, id_rifa):
+        """
+        Calcula y realiza el pago de premios a los ganadores de una rifa específica.
+
+        Args:
+            id_rifa (int): El identificador de la rifa para la que se calculan los premios.
+        """
